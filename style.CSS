@@ -1,0 +1,280 @@
+
+:root {
+    --bg-dark: #121212;
+    --bg-card: #1e1e1e;
+    --text-main: #f0f0f0;
+    --accent: #ff3b30;
+    --font-main: 'Teko', sans-serif;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.flex_column_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-main);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 { font-size: 3rem; margin: 0; color: var(--accent); }
+h2 { color: #ccc; margin-top: 10px; }
+.h2 { border-bottom: 2px solid var(--accent); padding-bottom: 10px; margin-bottom: 30px; }
+
+/* Realizacje */
+
+.h2-title {
+    text-align: center;
+    color: var(--accent);
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+/* MENU */
+.top-menu {
+    background-color: black;
+    padding: 15px 0;
+    border-bottom: 2px solid var(--accent);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.top-menu a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--font-main);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.top-menu a:hover {
+    color: var(--accent);
+}
+
+/* HEADER */
+.main-header {
+    height: 70vh;
+
+    /* Auto - tło */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://images.pexels.com/photos/3311574/pexels-photo-3311574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    gap: 20px;
+}
+
+.button {
+    background-color: var(--accent);
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: var(--font-main);
+    font-size: 1.5rem;
+    transition: 0.3s;
+    border: 2px solid var(--accent);
+}
+
+.button:hover { 
+    background-color: transparent; 
+    color: var(--accent);
+}
+
+section { padding: 40px 10px; }
+
+.auta_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.samochód {
+    background-color: var(--bg-card);
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    padding-bottom: 20px;
+}
+
+.samochód img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.button-small {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid var(--accent);
+    padding: 5px 15px;
+    border-radius: 4px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.button-small:hover { background-color: var(--accent); color: white; }
+
+/* FAQ  */
+.faq { max-width: 800px; margin: 0 auto; }
+
+.box { width: 100%; margin-bottom: 10px; }
+
+.accordion_btn {
+    width: 100%;
+    background-color: var(--bg-card);
+    color: white;
+    border: none;
+    padding: 15px;
+    text-align: left;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid var(--accent);
+}
+
+.accordion_btn i { transition: transform 0.3s; }
+.accordion_btn.active i { transform: rotate(180deg); }
+
+/* Ukryte FAQ */
+.text {
+    display: none;
+    background-color: #252525;
+    padding: 15px;
+    color: #bbb;
+    margin-bottom: 10px;
+}
+
+/* Komentarze */
+.komentarze {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.single_comment {
+    background-color: var(--bg-card);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    border: 1px solid #333;
+}
+
+/* Kontakt */
+.all_contact { display: flex; gap: 40px; flex-wrap: wrap; justify-content: center; }
+.single_contact { text-decoration: none; color: white; text-align: center; }
+.single_contact i { font-size: 2rem; color: var(--accent); margin-bottom: 10px; }
+
+
+footer {
+    background-color: black;
+    padding: 40px 10px;
+    text-align: center;
+    border-top: 2px solid var(--accent);
+    color: white;
+}
+
+footer div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+footer p {
+    width: 100%; 
+    margin: 0 0 15px 0;
+    color: #bbb;
+    text-transform: uppercase;
+}
+
+/* Social Media */
+footer a {
+    text-decoration: none;
+    color: white !important;
+    margin: 5px;
+    display: inline-block;
+}
+
+/* Ikony */
+footer i { 
+    font-size: 2rem; 
+    transition: transform 0.3s, color 0.3s; 
+}
+
+footer a:hover i { 
+    color: var(--accent); 
+    transform: scale(1.2);
+}
+
+/*  Cennik (tabela) */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.cennik-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+    background-color: #1e1e1e;
+}
+
+.cennik-table th, 
+.cennik-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+.cennik-table th {
+    background-color: var(--accent);
+    color: white;
+    text-transform: uppercase;
+}
+
+.cennik-table tr:hover {
+    background-color: #333;
+    transition: 0.3s;
+}

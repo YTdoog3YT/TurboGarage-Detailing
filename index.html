@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head class="header">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TurboGarage - Tuning Samochodowy</title>
+  
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://kit.fontawesome.com/2b7d993087.js" crossorigin="anonymous" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+<!-- Nagłówek -->
+
+  <header class="flex_column_container main-header">
+    <div>
+      <h1>TurboGarage</h1>
+      <h2>Profesjonalny Tuning & Detailing</h2>
+    </div>
+    <a href="oferta.html" class="button">Sprawdź ofertę</a>
+  </header>
+
+  <main id="main">
+
+    <section class="info_section flex_column_container">
+      <h2>Zmieniamy auta w bestie</h2>
+      <div class="info_box">
+        <i class="fa-solid fa-gauge-high icon-big" style="font-size: 3rem; color: var(--accent); margin-bottom: 20px;"></i>
+        <p>Oferujemy profesjonalny chiptuning, modyfikacje wydechu i pakiety stylistyczne. Twoje auto zyska drugie życie.</p>
+      </div>
+    </section>
+
+    <!-- Przykładowe realizacje -->
+
+    <section class="realizacje-cars" aria-label="Nasze Realizacje">
+      <h2 class="h2-title">Nasze Realizacje</h2>
+      
+      <div class="auta_grid">
+        <div class="samochód flex_column_container">
+          <h3 class="auto-title">BMW M4</h3>
+          <img src="https://cdn.motor1.com/images/mgl/2Np1Kn/s1/manhart-mh4-gtr-ii-basis-bmw-m4-csl.jpg" loading="lazy" />
+          <p>Kompletny układ wydechowy + mapa silnika. Wynik: 550KM.</p>
+          <a href="bmw.html" class="button-small">Zobacz szczegóły</a>
+        </div>
+
+        <div class="samochód flex_column_container">
+          <h3 class="auto-title">Audi RS6</h3>
+          <img src="https://cityperformancecentre.com/cdn/shop/products/RS6KitonCar01_0d1beed2-a900-41b1-8b4d-0452215f6acb.png?v=1743055072&width=2000" alt="Czerwone Audi RS6" loading="lazy" />
+          <p>Poszerzenie nadwozia, felgi 22 cale i ceramika na lakier.</p>
+          <a href="audi.html" class="button-small">Zobacz szczegóły</a>
+        </div>
+
+        <div class="samochód flex_column_container">
+          <h3 class="auto-title">Mercedes-Benz</h3>
+          <img src="https://bringatrailer.com/wp-content/uploads/2024/01/2021_mercedes-amg_gt-black-series_P1422906-62299-scaled.jpg?fit=2048%2C1365" alt="Mercedes AMG" loading="lazy" />
+          <p>Modyfikacja dolotu powietrza i sportowe zawieszenie.</p>
+          <a href="mercedes.html" class="button-small">Zobacz szczegóły</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+
+    <section class="faq flex_column_container">
+      <h2 class="h2">FAQ - Pytania</h2>
+      <div class="accordion">
+        
+        <div class="box">
+          <button class="accordion_btn">
+            <p>Czy tuning jest bezpieczny?</p>
+            <i class="fa-solid fa-arrow-left-long"></i>
+          </button>
+        </div>
+        <p class="text">Tak, wszystkie nasze modyfikacje są testowane na hamowni i bezpieczne dla silnika.</p>
+
+        <div class="box">
+          <button class="accordion_btn">
+            <p>Ile trwa modyfikacja?</p>
+            <i class="fa-solid fa-arrow-left-long"></i>
+          </button>
+        </div>
+        <p class="text">Chiptuning zajmuje ok. 4 godziny. Większe modyfikacje od 2 do 5 dni.</p>
+
+        <div class="box">
+          <button class="accordion_btn">
+            <p>Czy tracę gwarancję?</p>
+            <i class="fa-solid fa-arrow-left-long"></i>
+          </button>
+        </div>
+        <p class="text">Ingerencja w sterownik może naruszyć gwarancję, ale oferujemy przywrócenie do serii.</p>
+
+      </div>
+    </section>
+
+    <!-- Komentarze -->
+
+    <section class="flex_column_container comments">
+      <h2 class="h2">Co mówią klienci?</h2>
+      <div class="komentarze">
+        <div class="flex_column_container single_comment">
+          <p>"Moje auto w końcu lata jak powinno! Polecam chłopaków."</p>
+          <p><small>Michał, Gdańsk</small></p>
+        </div>
+        <div class="flex_column_container single_comment">
+          <p>"Pełna profeska. Terminowo i zgodnie z wyceną."</p>
+          <p><small>Karol W.</small></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+
+    <section class="contact flex_column_container">
+      <h2 class="h2">Kontakt</h2>
+      <div class="all_contact">
+        <div class="single_contact">
+          <a class="single_contact" href="https://mail.google.com/mail/?view=cm&fs=1&to=biuro@turbogarage.pl" target="_blank">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <p>Napisz do nas</p>
+          </a>
+        </div>
+        <div class="single_contact">
+          <a class="single_contact" href="tel:123456789">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            <p>+48 123 456 789</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+    <!-- Social Media -->
+
+<footer>
+    <div>
+      <p>Znajdź nas:</p>
+      
+      <a href="https://www.facebook.com" target="_blank">
+        <i class="fa-brands fa-facebook fa-2x"></i>
+      </a>
+
+      <a href="https://www.instagram.com" target="_blank">
+        <i class="fa-brands fa-instagram fa-2x"></i>
+      </a>
+
+      <a href="https://www.tiktok.com" target="_blank">
+        <i class="fa-brands fa-tiktok fa-2x"></i>
+      </a>
+
+      <a href="https://www.reddit.com" target="_blank">
+        <i class="fa-brands fa-reddit fa-2x"></i>
+      </a>
+
+      <a href="https://x.com" target="_blank">
+        <i class="fa-brands fa-x-twitter fa-2x"></i>
+      </a>
+
+    </div>
+    <div>
+      <p>TurboGarage Team</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
